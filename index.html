@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>My Endless Love larasani junita</title>
     <style>
         body {
@@ -49,7 +48,6 @@
             font-size: 22px;
         }
 
-        
         .heart {
             position: absolute;
             color: #ff3366;
@@ -57,7 +55,6 @@
             animation: float 6s infinite ease-in-out;
         }
 
-   
         @keyframes float {
             0% {
                 transform: translateY(0) scale(1);
@@ -73,7 +70,6 @@
             }
         }
 
-        
         .heart:nth-child(1) { left: 20%; animation-duration: 4s; }
         .heart:nth-child(2) { left: 40%; animation-duration: 5s; }
         .heart:nth-child(3) { left: 60%; animation-duration: 6s; }
@@ -87,7 +83,6 @@
 </head>
 <body>
 
-   
     <div class="heart">❤️</div>
     <div class="heart">💖</div>
     <div class="heart">💘</div>
@@ -102,11 +97,12 @@
         <p class="signature">Yours always,<br> [larasani junita]</p>
     </div>
 
-    <audio autoplay loop>
+    <audio id="myAudio" loop>
         <source src="beutiful.mp3" type="audio/mp3"/>
-	Your browser does not support the audio tag.
+        Your browser does not support the audio tag.
     </audio>
-<button onclick="document.getElementById('myAudio').play()">Play Music</button>
+
+    <button onclick="document.getElementById('myAudio').play()">Play Music</button>
 
 </body>
 </html>
